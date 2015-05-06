@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>OpenTabs</title>
+    <style>
+      body {
+        width: 340px;
+        overflow-x: hidden;
+        padding: 0px;
+        margin: 0px;
+        background-color: #fff;
+      }
+
+      #wrapper {
+        display: block;
+        font-family: sans-serif;
+        width: 100%;
+        margin: 0px auto;
+        overflow: hidden;
+      }
+
+      #wrapper .hero {
+        text-align: center;
+      }
+
+      header {
+        display: block;
+        height: 40px;
+        background: #1D1414;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      .favIconUrl {
+        height: 17px;
+        width: 17px;
+        position: absolute;
+        margin-top: 7px;
+        margin-left: -5px;
+      }
+      .tab-list {
+        padding: 5px 10px;
+        border-bottom: 1px solid #cecece;
+        /*margin-bottom: 5px;*/
+        -webkit-transition: 0.2s all linear;
+      }
+
+      .tab-list:hover {
+        background-color: #efefef;
+      }
+
+      .tab-list:hover .close {
+        display: inline-block;
+      }
+
+      .title {
+        margin-right: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        width: 95%;
+        font-size: 13px;
+        color: #020202;
+        margin-left: 20px;
+      }
+
+      .url {
+        font-size: 11px;
+        font-style: italic;
+        line-height: 16px;
+        color: #565656;
+        display: block;
+        width: 95%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-left: 20px;
+      }
+
+      .close {
+        display: none;
+        width: 10px;
+        height: 15px;
+        line-height: 15px;
+        padding-left: 4px;
+        float: right;
+        margin-top: -25px;
+        cursor: pointer;
+        margin-right: -4px;
+        z-index: 10;
+      }
+
+      .close:hover {
+        background: #ccc;
+        border-radius: 10px;
+        border: 1px #aaa solid;
+      }
+    </style>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="new-tab.js"></script>
+  </head>
+  <body>
+  <div id="wrapper">
+    <header><span></span> Open Tabs</header>
+    <div class="table-container"></div>
+  </div>
+  </body>
+</html>
